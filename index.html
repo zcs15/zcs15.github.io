@@ -22,9 +22,9 @@
               </p>
               <p>I am currently a Ph.D. student advised by Professor <a href="https://scholar.google.com/citations?user=XA8EOlEAAAAJ&hl=en">In So Kweon</a> and Professor <a href="https://scholar.google.com/citations?user=GdQtWNQAAAAJ">Junmo Kim</a>, from <a href="https://ee.kaist.ac.kr/en/">School of Electronical Engineering</a>, <a href="https://www.kaist.ac.kr/en/">KAIST</a>. My current research interest lies in the interaction of computer vision and machine learning, including but not limited to：
                 <ul>
-                  <li>Generative Models</li>
-                  <li>Self-supervised Learning</li>
-                  <li>Adversarial Machine Learning</li>
+                  <li>Generative models</li>
+                  <li>Multi-modality learning</li>
+                  <li>Adversarial machine learning</li>
                   </ul>
               </p>
 
@@ -59,24 +59,42 @@
             <td>
               <heading>Publications</heading>
               <p>* indicates equal contributions</p>
-
             </td>
           </tr>
         </tbody></table>
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-
-        <table
-            style="width:110%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;width:110%;vertical-align:middle">
-                  <subheading>Generative Models</subheading>
-                </td>
-              </tr>
-            </tbody>
-        </table>
-
         <table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='mira_image'>
+                  <img src='images/imagenet_d.png' width="180"></div>
+                <img src='images/imagenet_d.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function mira_start() {
+                  document.getElementById('mira_image').style.opacity = "1";
+                }
+
+                function mira_stop() {
+                  document.getElementById('mira_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <a href="https://www.researchgate.net/publication/369662720_Text-to-image_Diffusion_Models_in_Generative_AI_A_Survey">
+                <papertitle>ImageNet-D: Benchmarking Neural Network Robustness on Diffusion Synthetic Object</papertitle>
+              </a>
+              <br>
+              <b>Chenshuang Zhang</b>, Fei Pan, Junmo Kim, In So Kweon, Chengzhi Mao
+              <br>
+             IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2024
+              <p> 
+              </p>
+            </td>
+          </tr>	
+
           <tr onmouseout="mira_stop()" onmouseover="mira_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
               <div class="one">
@@ -100,14 +118,200 @@
                 <papertitle>Text-to-image Diffusion Models in Generative AI: A Survey</papertitle>
               </a>
               <br>
-              <b>Chenshuang Zhang</b>, Chaoning Zhang, Mengchun Zhang, In So Kweon
+              <b>Chenshuang Zhang</b>, Chaoning Zhang, Mengchun Zhang, Junmo Kim, In So Kweon
               <br>
-              <em>Arxiv</em>, 2023
-              <p> A self-contained survey on the recent progress on text-to-image task based on diffusion model. Related generative tasks in vision are also discussed, including 
-                text-guided 3D object generation and image editing.
+             Under review, 2024
+              <p> A self-contained survey on the recent progress on text-to-image task based on diffusion model.
               </p>
             </td>
           </tr>	
+
+          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='mira_image'>
+                  <img src='images/dual_bn.png' width="180"></div>
+                <img src='images/dual_bn.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function mira_start() {
+                  document.getElementById('mira_image').style.opacity = "1";
+                }
+
+                function mira_stop() {
+                  document.getElementById('mira_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0020025518305115">
+                <papertitle>Towards Understanding Dual BN In Hybrid Adversarial Training</papertitle>
+              </a>
+              <br>
+              <b>Chenshuang Zhang</b>, Chaoning Zhang, Kang Zhang, Axi Niu, Junmo Kim, In So Kweon
+              <br>
+             Under review, 2024
+              <p></p>
+            </td>
+          </tr>		
+
+                   
+          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='mira_image'>
+                  <img src='images/mae_survey.png' width="180"></div>
+                <img src='images/mae_survey.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function mira_start() {
+                  document.getElementById('mira_image').style.opacity = "1";
+                }
+
+                function mira_stop() {
+                  document.getElementById('mira_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <a href="https://arxiv.org/abs/2208.00173">
+                <papertitle>A survey on masked autoencoder for visual self-supervised learning </papertitle>
+              </a>
+              <br>
+              Chaoning Zhang, <b>Chenshuang Zhang</b>, Junha Song, John Seon Keun Yi,  In So Kweon
+              <br>
+             IJCAI 2023
+              <p>
+              </p>
+            </td>
+          </tr>		
+
+            <tr onmouseout="mira_stop()" onmouseover="mira_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <div class="two" id='mira_image'>
+                    <img src='images/global_paper.png' width="180"></div>
+                  <img src='images/global_paper.png' width="180">
+                </div>
+                <script type="text/javascript">
+                  function mira_start() {
+                    document.getElementById('mira_image').style.opacity = "1";
+                  }
+  
+                  function mira_stop() {
+                    document.getElementById('mira_image').style.opacity = "0";
+                  }
+                  mira_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0020025518305115">
+                  <papertitle>A global and updatable ECG beat classification system based on recurrent neural networks and active learning</papertitle>
+                </a>
+                <br>
+                Guijin Wang, <b>Chenshuang Zhang (First student author)</b>, Yongpan Liu, Huazhong Yang, Dapeng Fu, Haiqing Wang, Ping Zhang
+                <br>
+               Information Sciences (Impact factor 8.23), 2019
+                <p></p>
+              </td>
+            </tr>		
+  
+            <tr onmouseout="mira_stop()" onmouseover="mira_start()">
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <div class="one">
+                  <div class="two" id='mira_image'>
+                    <img src='images/patient_specific.png' width="180"></div>
+                  <img src='images/patient_specific.png' width="180">
+                </div>
+                <script type="text/javascript">
+                  function mira_start() {
+                    document.getElementById('mira_image').style.opacity = "1";
+                  }
+  
+                  function mira_stop() {
+                    document.getElementById('mira_image').style.opacity = "0";
+                  }
+                  mira_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:top">
+                <a href="https://ieeexplore.ieee.org/abstract/document/7893269">
+                  <papertitle>Patient-specific ECG classification based on recurrent neural networks and clustering technique</papertitle>
+                </a>
+                <br>
+                <b>Chenshuang Zhang</b>, Guijin Wang, Jingwei Zhao, Pengfei Gao, Jianping Lin, Huazhong Yang
+                <br>
+               2017 13th IASTED International Conference on Biomedical Engineering (BioMed), 2017
+                <p></p>
+              </td>
+            </tr>	 
+
+ 
+
+         <tr onmouseout="mira_stop()" onmouseover="mira_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='mira_image'>
+                  <img src='images/ICLR2022_paper.png' width="180"></div>
+                <img src='images/ICLR2022_paper.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function mira_start() {
+                  document.getElementById('mira_image').style.opacity = "1";
+                }
+
+                function mira_stop() {
+                  document.getElementById('mira_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <a href="https://arxiv.org/abs/2203.16262">
+                <papertitle>How does simsiam avoid collapse without negative samples? a unified understanding with self-supervised contrastive learning</papertitle>
+              </a>
+              <br>
+              Chaoning Zhang*, Kang Zhang*,  <b>Chenshuang Zhang</b>, Trung X Pham, Chang D Yoo, In So Kweon
+              <br>
+              International Conference on Learning Representations <b>(ICLR)</b>, 2022
+              <p></p>
+            </td>
+          </tr>	
+
+          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='mira_image'>
+                  <img src='images/DeACL_paper.png' width="180"></div>
+                <img src='images/DeACL_paper.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function mira_start() {
+                  document.getElementById('mira_image').style.opacity = "1";
+                }
+
+                function mira_stop() {
+                  document.getElementById('mira_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-031-20056-4_42">
+                <papertitle>Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness</papertitle>
+              </a>
+              <br>
+              Chaoning Zhang*, Kang Zhang*, <b>Chenshuang Zhang</b>, Axi Niu, Jiu Feng, Chang D Yoo, In So Kweon
+              <br>
+             European Conference on Computer Vision (<b>ECCV</b>) Oral, 2022  
+              <p></p>
+            </td>
+          </tr>	
+
+
+
 
           <tr onmouseout="mira_stop()" onmouseover="mira_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
@@ -134,7 +338,7 @@
               <br>
               <b>Chenshuang Zhang</b>, Chaoning Zhang, Sheng Zheng, Mengchun Zhang, Maryam Qamar, Sung-Ho Bae, In So Kweon
               <br>
-              <em>Arxiv</em>, 2023
+             Arxiv, 2023
               <p>
                 A self-contained survey on the recent progress on speech generation based on diffusion model, including text-to-speech and speech enhancement.
               </p>
@@ -166,7 +370,7 @@
               <br>
               Chaoning Zhang, <b>Chenshuang Zhang</b>,  Chenghao Li, Yu Qiao, Sheng Zheng, Sumit Kumar Dam, Mengchun Zhang, Jung Uk Kim, Seong Tae Kim, Jinwoo Choi, Gyeong-Moon Park, Sung-Ho Bae, Lik-Hang Lee, Pan Hui,  In So Kweon, Choong Seon Hong
               <br>
-              <em>Arxiv</em>, 2023
+             Arxiv, 2023
               <p>
                 A survey on the underlying techniques and applications of ChatGPT.
               </p>
@@ -198,7 +402,7 @@
               <br>
               Chaoning Zhang, <b>Chenshuang Zhang</b>, Sheng Zheng, Yu Qiao, Chenghao Li, Mengchun Zhang, Sumit Kumar Dam, Chu Myaet Thwal, Ye Lin Tun, Le Luang Huy, Donguk kim, Sung-Ho Bae, Lik-Hang Lee, Yang Yang, Heng Tao Shen, In So Kweon, Choong Seon Hong
               <br>
-              <em>Arxiv</em>, 2023
+             Arxiv, 2023
               <p>
               We provide a complete review of Generative AI, including underlying techniques, typical tasks in academia and industrial applications.
               </p>
@@ -229,208 +433,12 @@
               <br>
               Mengchun Zhang*, Maryam Qamar*, Taegoo Kang, Yuna Jung, <b>Chenshuang Zhang</b>, Sung-Ho Bae†, Chaoning Zhang
               <br>
-              <em>Arxiv</em>, 2023
+             Arxiv, 2023
               <p>
               A survey on the recent progress on graph diffusion models.
               </p>
             </td>
           </tr>	
-        </tbody></table>
-
-        <table
-        style="width:110%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-          <tr>
-            <td style="padding:20px;width:110%;vertical-align:middle">
-              <subheading>Self-supervised Learning</subheading>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-
-        <table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <div class="two" id='mira_image'>
-                  <img src='images/mae_survey.png' width="180"></div>
-                <img src='images/mae_survey.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function mira_start() {
-                  document.getElementById('mira_image').style.opacity = "1";
-                }
-
-                function mira_stop() {
-                  document.getElementById('mira_image').style.opacity = "0";
-                }
-                mira_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <a href="https://arxiv.org/abs/2208.00173">
-                <papertitle>A Survey on Masked Autoencoder for Self-supervised Learning in Vision and Beyond</papertitle>
-              </a>
-              <br>
-              Chaoning Zhang, <b>Chenshuang Zhang</b>, Junha Song, John Seon Keun Yi, Kang Zhang, In So Kweon
-              <br>
-              <em>Arxiv</em>, 2022
-              <p>
-                
-              </p>
-            </td>
-          </tr>		
-
-          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <div class="two" id='mira_image'>
-                  <img src='images/ICLR2022_paper.png' width="180"></div>
-                <img src='images/ICLR2022_paper.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function mira_start() {
-                  document.getElementById('mira_image').style.opacity = "1";
-                }
-
-                function mira_stop() {
-                  document.getElementById('mira_image').style.opacity = "0";
-                }
-                mira_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <a href="https://arxiv.org/abs/2203.16262">
-                <papertitle>How does simsiam avoid collapse without negative samples? a unified understanding with self-supervised contrastive learning</papertitle>
-              </a>
-              <br>
-              Chaoning Zhang*, Kang Zhang*,  <b>Chenshuang Zhang</b>, Trung X Pham, Chang D Yoo, In So Kweon
-              <br>
-              <em>ICLR</em>, 2022
-              <p></p>
-            </td>
-          </tr>	
-
-        </tbody></table>
-
-    `<table
-        style="width:110%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-          <tr>
-            <td style="padding:20px;width:110%;vertical-align:middle">
-              <subheading>Adversarial Machine Learning</subheading>
-            </td>
-          </tr>
-        </tbody>
-    </table>
-
-    <table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <div class="two" id='mira_image'>
-                  <img src='images/DeACL_paper.png' width="180"></div>
-                <img src='images/DeACL_paper.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function mira_start() {
-                  document.getElementById('mira_image').style.opacity = "1";
-                }
-
-                function mira_stop() {
-                  document.getElementById('mira_image').style.opacity = "0";
-                }
-                mira_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <a href="https://link.springer.com/chapter/10.1007/978-3-031-20056-4_42">
-                <papertitle>Decoupled Adversarial Contrastive Learning for Self-supervised Adversarial Robustness</papertitle>
-              </a>
-              <br>
-              Chaoning Zhang*, Kang Zhang*, <b>Chenshuang Zhang</b>, Axi Niu, Jiu Feng, Chang D Yoo, In So Kweon
-              <br>
-              <em>ECCV 2022 (Oral)</em>, 2022
-              <p></p>
-            </td>
-          </tr>	
-
-          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <div class="two" id='mira_image'>
-                  <img src='images/NoiseAug.png' width="180"></div>
-                <img src='images/NoiseAug.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function mira_start() {
-                  document.getElementById('mira_image').style.opacity = "1";
-                }
-
-                function mira_stop() {
-                  document.getElementById('mira_image').style.opacity = "0";
-                }
-                mira_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <a href="https://arxiv.org/abs/2202.05488">
-                <papertitle>Fast Adversarial Training with Noise Augmentation: A Unified Perspective on RandStart and GradAlign</papertitle>
-              </a>
-              <br>
-              Axi Niu, Kang Zhang, Chaoning Zhang,<b>Chenshuang Zhang</b>, In So Kweon, Chang D Yoo, Yanning Zhang
-              <br>
-              <em>Arxiv</em>, 2022
-              <p></p>
-            </td>
-          </tr>	
-
-      </tbody></table>
- 
-      <table
-          style="width:110%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:110%;vertical-align:middle">
-                <subheading>Deep Learning in Medical Applications</subheading>
-              </td>
-            </tr>
-          </tbody>
-      </table>
-      
-
-      <table style="width:100%;border:0px;border-spacing:0px 0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <div class="two" id='mira_image'>
-                  <img src='images/global_paper.png' width="180"></div>
-                <img src='images/global_paper.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function mira_start() {
-                  document.getElementById('mira_image').style.opacity = "1";
-                }
-
-                function mira_stop() {
-                  document.getElementById('mira_image').style.opacity = "0";
-                }
-                mira_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0020025518305115">
-                <papertitle>A global and updatable ECG beat classification system based on recurrent neural networks and active learning</papertitle>
-              </a>
-              <br>
-              Guijin Wang, <b>Chenshuang Zhang</b>, Yongpan Liu, Huazhong Yang, Dapeng Fu, Haiqing Wang, Ping Zhang
-              <br>
-              <em>Information Sciences (Impact factor 8.23)</em>, 2019
-              <p></p>
-            </td>
-          </tr>		
 
           <tr onmouseout="mira_stop()" onmouseover="mira_start()">
             <td style="padding:20px;width:25%;vertical-align:top">
@@ -457,42 +465,12 @@
               <br>
               Pengwei Xie, Guijin Wang, <b>Chenshuang Zhang</b>, Ming Chen, Huazhong Yang, Tingting Lv, Zhenhua Sang, Ping Zhang
               <br>
-              <em>2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</em>, 2018
+             2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 2018
               <p></p>
             </td>
           </tr>	
+      </tbody></table>
 
-          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <div class="two" id='mira_image'>
-                  <img src='images/patient_specific.png' width="180"></div>
-                <img src='images/patient_specific.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function mira_start() {
-                  document.getElementById('mira_image').style.opacity = "1";
-                }
-
-                function mira_stop() {
-                  document.getElementById('mira_image').style.opacity = "0";
-                }
-                mira_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              <a href="https://ieeexplore.ieee.org/abstract/document/7893269">
-                <papertitle>Patient-specific ECG classification based on recurrent neural networks and clustering technique</papertitle>
-              </a>
-              <br>
-              <b>Chenshuang Zhang</b>, Guijin Wang, Jingwei Zhao, Pengfei Gao, Jianping Lin, Huazhong Yang
-              <br>
-              <em>2017 13th IASTED International Conference on Biomedical Engineering (BioMed)</em>, 2017
-              <p></p>
-            </td>
-          </tr>	      
-					
-        </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
