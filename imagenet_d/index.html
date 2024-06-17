@@ -58,7 +58,8 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ImageNet-D: Benchmarking Neural Network Robustness on Diffusion Synthetic Object [CVPR 2024 Highlight]</h1>
+          <h1 class="title is-1 publication-title">ImageNet-D: Benchmarking Neural Network Robustness on Diffusion Synthetic Object</h1>
+          <h3 class="title is-3 publication-title", style="color: red;"> CVPR 2024 Highlight (2.8%)</h3>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://chenshuang-zhang.github.io/">Chenshuang Zhang</a><sup>1</sup>,</span>
@@ -123,7 +124,7 @@
             <a href="https://www.youtube.com/watch?v=CQm2oDfCvR8"
                 class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
-                  <i class="far fa-images"></i>
+                  <i class="fab fa-youtube"></i>
               </span>
               <span>Youtube</span>
               </a>
@@ -137,128 +138,135 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="Citation">
+  <div class="container is-max-desktop content">
+    <!-- <h3 class="title">Citation</h3> -->
+    <pre><code>@InProceedings{Zhang_2024_CVPR,
+      author    = {Zhang, Chenshuang and Pan, Fei and Kim, Junmo and Kweon, In So and Mao, Chengzhi},
+      title     = {ImageNet-D: Benchmarking Neural Network Robustness on Diffusion Synthetic Object},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      month     = {June},
+      year      = {2024},
+      pages     = {21752-21762}
+  }</code></pre>
+  </div>
+</section>
+
+<section class="section" id="Teaser">
   <div class="container is-max-desktop">
-
-    <!-- Teaser. -->
-      <div class="columns is-centered has-text-justified">
-        <div class="column is-four-fifths">
-          <!-- <h2 class="title is-3">Dataset</h2> -->
-          <div class="one">
-            <div class="two" id='mira_image'>
-            <img src="static/images/teaser_figure.png" width="800px" height="2100px" />
-            <p>
-              Top predictions from CLIP (ViT-L/14) on ImageNet-D. We synthesize the images by changing their background, texture and material. The groundtruth for the images are plunger, spatula, and ladle in order, together with the background (badminton court), texture (freckled), and material (painted). 
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/ Teaser. -->
-
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We establish rigorous benchmarks for visual perception robustness. Synthetic images such as ImageNet-C, ImageNet-9, and Stylized ImageNet provide specific type of evaluation over synthetic corruptions, backgrounds, and textures, yet those robustness benchmarks are restricted in specified variations and have low synthetic quality. In this work, we introduce generative model as a data source for synthesizing hard images that benchmark deep models' robustness. Leveraging diffusion models, we are able to generate images with more diversified backgrounds, textures, and materials than any prior work, where we term this benchmark as ImageNet-D.  Experimental results show that ImageNet-D results in a significant accuracy drop to a range of vision models, from the standard ResNet visual classifier to the latest foundation models like CLIP and MiniGPT-4, significantly reducing their accuracy by up to 60\%. Our work suggests that diffusion models can be an effective source to test vision models.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-
-        <!-- Comparison to prior work. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">ImageNet-D achieves high image fidelity</h2>
-            <div class="one">
-              <div class="two" id='mira_image'>
-              <img src="static/images/test_set_comparison.png" width="800px" height="2100px" />
-            </div>
-    
-            <div class="content has-text-justified">
-              <p>
-                Examples from  ImageNet-9, Stylized-ImageNet and ImageNet-C and our ImageNet-D. For the second row, we show images from ImageNet-D with different backgrounds, textures and materials orderly. Take the background for example (the two columns on the left), ImageNet-9~\cite{xiao2020noise} generates new images by simply cutting and paste foreground and background from different images, leading to object deformation and dislocation. By contrast, ImageNet-D includes images with diverse backgrounds by diffusion generation, achieving superior visual fidelity. 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    <!-- Dataset samples. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">ImageNet-D samples</h2>
-        <div class="one">
-          <div class="two" id='mira_image'>
-          <img src="static/images/imagenet_d_samples.png" width="800px" height="2100px" />
-        </div>
-
-        <div class="content has-text-justified">
-          <p>
-            The ImageNet-D test set. Each group of images is generated with the same object and nuisance, such as background, texture, and material. For each group of images, the ground truth label is color green, while the predicted categories by CLIP (ViT-L/14) on each image are in black. Leveraging diffusion models for image generation, we can create a test set with diverse combinations of objects and nuisances. For example, the top left corner shows a bench in the swimming pool background. Interestingly, CLIP (ViT-L/14) recognizes the bench in this image as swimming trunks.
-          </p>
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <img src="static/images/teaser_figure.png" alt="Teaser Figure" />
         </div>
       </div>
     </div>
   </div>
-  
-    <!--/ Dataset samples. -->
+</section>
 
-    <!-- Method. -->
+
+<section class="section" id="Abstract">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3 has-text-centered">Abstract</h3>
+    <div class="content has-text-justified">
+      <p>
+        We establish rigorous benchmarks for visual perception robustness. Synthetic images such as ImageNet-C, ImageNet-9, and Stylized ImageNet provide specific types of evaluation over synthetic corruptions, backgrounds, and textures. Yet, those robustness benchmarks are restricted in specified variations and have low synthetic quality. In this work, we introduce generative models as a data source for synthesizing hard images that benchmark deep models' robustness. Leveraging diffusion models, we are able to generate images with more diversified backgrounds, textures, and materials than any prior work, which we term as ImageNet-D. Experimental results show that ImageNet-D results in a significant accuracy drop to a range of vision models, from the standard ResNet visual classifier to the latest foundation models like CLIP and MiniGPT-4, significantly reducing their accuracy by up to 60%. Our work suggests that diffusion models can be an effective source to test vision models.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="Method">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3 has-text-centered">Method: Benchmark Robustness by Diffusion</h3>
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Method</h2>
-        <div class="one">
-          <div class="two" id='mira_image'>
+      <div class="column is-full">
+        <div class="content" id='mira_image'>
           <img src="static/images/framework.png" width="800px" height="2100px" />
         </div>
         <div class="content has-text-justified">
           <p>
-            ImageNet-D creation framework. ImageNet-D is created by first combining various object categories and nuisances, including background, texture, and material. To make the test set challenging, we only keep the hard images from the large pool that commonly make multiple surrogate models fail to predict the correct object label. The test set is then refined through human verification to ensure the images are valid, single-class, and high-quality, making ImageNet-D suitable for evaluating the robustness of different neural networks.
+            We create ImageNet-D by first generating a large image pool using diffusion models. To make the test set challenging, we only keep the hard images from the large pool that make multiple surrogate models fail. The test set is then refined through human verification to ensure the labeling quality.
           </p>
         </div>
       </div>
     </div>
   </div>
-    <!--/ Method. -->
+</section>
 
-     <!-- Result. -->
-     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Results</h2>
-        <div class="one">
-          <div class="two" id='mira_image'>
+
+<section class="section" id="Results">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3 has-text-centered">Results: SOTA Model Accuracy Drops by up to 60%</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <div class="content" id='mira_image'>
           <img src="static/images/imagenet.png" width="800px" height="2100px" />
         </div>
         <div class="content has-text-justified">
           <p>
-            Model accuracy on ImageNet vs.  ImageNet-D. Each data point corresponds to one tested model. The plots reveal  that there is a significant accuracy drop from ImageNet to our new test set ImageNet-D. As the model's accuracy on ImageNet increases, the accuracy on ImageNet-D is also higher. These results show the effectiveness of ImageNet-D to evaluate the robustness of neural networks.
+            Model accuracy on ImageNet vs. ImageNet-D. Each data point corresponds to one tested model. The plots reveal that there is a significant accuracy drop from ImageNet to our new test set ImageNet-D.
           </p>
         </div>
       </div>
     </div>
-      <!--/ Result. -->
-    </div>
-
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{zhang2024imagenet_d,
-  author    = {Zhang, Chenshuang and Pan, Fei and Kim, Junmo and Kweon, In So and Mao, Chengzhi},
-  title     = {ImageNet-D: Benchmarking Neural Network Robustness on Diffusion Synthetic Object},
-  journal   = {CVPR},
-  year      = {2024},
-}</code></pre>
   </div>
 </section>
 
+<section class="section" id="Comparison">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3 has-text-centered">Visualizations: Higher Quality and Diverse Variations</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <div class="content" id='mira_image'>
+          <img src="static/images/test_set_comparison.png" width="800px" height="2100px" />
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Compared to prior synthetic test sets, ImageNet-D achieves higher image quality and diverse variations. ImageNet-D can be scaled efficiently to include more categories and nuisances.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="DatasetSamples">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3 has-text-centered">Visualizations: CLIP Fails on ImageNet-D</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <div class="content" id='mira_image'>
+          <img src="static/images/imagenet_d_samples.png" width="800px" height="2100px" />
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            For each group of images, the ground truth label is color green, while the predicted categories by CLIP (ViT-L/14) on each image are in black.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="DatasetSamplesFailure">
+  <div class="container is-max-desktop">
+    <h3 class="title is-3 has-text-centered">Visualizations: MiniGPT-4 and LLaVa-1.5 Fail</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <div class="content" id='mira_image'>
+          <img src="static/images/imagenet_d_samples.png" width="800px" height="2100px" />
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Both MiniGPT-4 and LLaVa-1.5 fail to recognize the object on ImageNet-D, highlighting the challenges the dataset poses for these models.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
